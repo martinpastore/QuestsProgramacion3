@@ -9,9 +9,7 @@ function copyText(){
 	else if(document.getElementById("txtUno").value == ''){
 		$("#txtUno").val(texto2);
 	}
-
-	/*
-	if(texto1 = "" && texto2 =){
+	if(texto1 == '' && texto2 == ''){
 		document.write("Please, write something");
-	}*/
+	}
 }	
