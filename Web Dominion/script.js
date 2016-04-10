@@ -2,7 +2,6 @@ function copyText(){
 	var texto1 = document.getElementById("txtUno").value;
 	var texto2 = document.getElementById("txtDos").value;
 
-
 	if(document.getElementById("txtDos").value == ''){
 		$("#txtDos").val(texto1);
 	}
@@ -10,6 +9,7 @@ function copyText(){
 		$("#txtUno").val(texto2);
 	}
 	if(texto1 == '' && texto2 == ''){
-		document.getElementById("stat").value = "Please, write something";
+		$("#txtUno").val("Please, write something here");
+		$("#txtDos").val("or here.");
 	}
 }	
