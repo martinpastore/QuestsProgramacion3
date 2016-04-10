@@ -10,6 +10,6 @@ function copyText(){
 		$("#txtUno").val(texto2);
 	}
 	if(texto1 == '' && texto2 == ''){
-		document.write("Please, write something");
+		document.getElementById("stat").value = "Please, write something";
 	}
 }	
