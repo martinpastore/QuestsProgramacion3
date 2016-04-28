@@ -20,5 +20,5 @@ var hash = function(texto){
 		extra = Math.round(Math.random() * 9);
 		textoRet += letter + extra + randomChar; 
 	}	
-	console.log(textoRet);
+	return(textoRet);
 }
