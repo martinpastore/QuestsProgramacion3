@@ -1,5 +1,5 @@
 var hash = function(texto){
-	var mayus="ABCDEFGHYJKLMNÑOPQRSTUVWXYZ"
+	var mayus="ABCDEFGHYJKLMNÑOPQRSTUVWXYZ";
 	var minus="abcdefghyjklmnñopqrstuvwxyz";
 	var char = [];
 	var textoRet = "";
@@ -20,7 +20,4 @@ var hash = function(texto){
 		textoRet += char[i] + extra + randomChar; 
 	}	
 	console.log(textoRet);
-}
-
-var hashOut = function(texto){
 }
