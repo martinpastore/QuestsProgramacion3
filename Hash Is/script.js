@@ -12,12 +12,13 @@ var hash = function(texto){
 			char[i] = char[i].toLowerCase();
 		}else{
 			char[i] = char[i].toUpperCase();
-		}	
+		}
+		var letter = char[i].charCodeAt(0);	
 		var rnum = Math.floor(Math.random() * extraChar.length);
 		randomChar = extraChar.substring(rnum,rnum+1);				
 			
 		extra = Math.round(Math.random() * 9);
-		textoRet += char[i] + extra + randomChar; 
+		textoRet += letter + extra + randomChar; 
 	}	
 	console.log(textoRet);
 }
