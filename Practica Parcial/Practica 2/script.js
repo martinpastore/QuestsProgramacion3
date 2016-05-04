@@ -30,33 +30,42 @@ game.prototype.agregarAlien = function(ap,dp, cantidad){
 }
 game.prototype.fight = function(){
 	for(var i = 0; i < this.soldado.length; i++){
+	var rand = Math.round(Math.random());
 		for(var j = 0; i < this.alien.length; i++){
-		var rand = Math.round(Math.random());
 			if(i === j && this.soldado[i].ap > this.alien[i].dp){
 				this.alien.splice(i, 1);
+				console.log(this.alien, this.soldado);
 			}else if(i === j && this.soldado[i].ap < this.alien[i].dp){
 				this.soldado.splice(i, 1);
+				console.log(this.alien, this.soldado);
 			}else if(i === j && this.soldado[i].ap == this.alien[i].dp){
 				this.soldado.splice(i, 1);
 				this.alien.splice(i, 1);
+				console.log(this.alien, this.soldado);
 			}else if(i < j && rand == 1 && this.soldado[i].ap > this.alien[i].dp){
 				this.alien.splice(i, 1);
+				console.log(this.alien, this.soldado);
 			}else if(i < j && rand == 0){
 				console.log("FAIL");
 			}else if(i < j && rand == 1 && this.soldado[i].ap < this.alien[i].dp){
 				this.soldado.splice(i, 1);
+				console.log(this.alien, this.soldado);
 			}else if(i < j && rand == 1 && this.soldado[i].ap == this.alien[i].dp){
 				this.alien.splice(i, 1);
 				this.soldado.splice(i, 1);
+				console.log(this.alien, this.soldado);
 			}else if(i > j && rand == 0 && this.soldado[i].ap > this.alien[i].dp){
 				this.alien.splice(i, 1);
+				console.log(this.alien, this.soldado);
 			}else if(i < j && rand == 1){
 				console.log("FAIL");
 			}else if(i < j && rand == 0 && this.soldado[i].ap < this.alien[i].dp){
 				this.soldado.splice(i, 1);
+				console.log(this.alien, this.soldado);
 			}else if(i < j && rand == 0 && this.soldado[i].ap == this.alien[i].dp){
 				this.alien.splice(i, 1);
 				this.soldado.splice(i, 1);
+				console.log(this.alien, this.soldado);
 			}
 			if(this.alien.length == 0){
 				return "Los soldados ganan";
