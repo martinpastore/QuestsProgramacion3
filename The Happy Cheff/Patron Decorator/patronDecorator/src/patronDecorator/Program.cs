@@ -89,7 +89,7 @@ public class Napolitana : Milanesa
     }
     public override int precio()
     {
-        return this.m.precio + 25;
+        return this.m.precio() + 25;
     }
 }
 
@@ -103,7 +103,7 @@ public class Fugazzeta : Milanesa
     }
     public override int precio()
     {
-        return this.m.precio + 27;
+        return this.m.precio() + 27;
     }
 }
 
