@@ -1,0 +1,9 @@
+En este caso, yo me oriente en un restaurants de milangas. 
+
+Como el patron nos permite evitar hacer todas las combinaciones posibles de milanesas,
+
+Lo q hice fue crear las variedades y las guarniciones, entonces dependiendo de cada 
+
+seleccion va a crear la mila adecuada con su guarnicion.
+
+PD: Lo habia armado con Pjs de un juego, pero es mas facil de explicar con comida :P
