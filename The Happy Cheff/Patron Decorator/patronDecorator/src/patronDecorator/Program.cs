@@ -20,11 +20,13 @@ namespace patronDecorator
             Milanesa m3 = new BaseMilanesa();
             m3 = new Ensalada(m3);
 
-            var precio = m1.precio();
-            precio = m2.precio();
-            precio = m3.precio();
+            var precio1 = m1.precio();
+            var precio2 = m2.precio();
+            var precio3 = m3.precio();
 
-            Console.WriteLine("Tu Milanesa sale: " + precio);
+            Console.WriteLine("La Milanesa 1 sale: " + precio1);
+            Console.WriteLine("La Milanesa 2 sale: " + precio2);
+            Console.WriteLine("La Milanesa 3 sale: " + precio3);
             Console.ReadLine();
         }
     }
